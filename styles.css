@@ -1,0 +1,275 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #000000, #0088ff);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    color: #fff;
+    font-size: 3.5em;
+    margin-top: 20px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+p {
+    font-size: 1.5em;
+    color: #fff;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    max-width: 80%;
+}
+
+/* Video Gallery Section */
+.video-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+.video-container iframe {
+    height: 500px;
+}
+
+.video-container.short iframe {
+    height: 500px;
+}
+
+/* Thumbnail Gallery Section */
+.thumbnail-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    width: 100%;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.thumbnail-container {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.thumbnail-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Specialties Section */
+.specialties {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    margin-top: 50px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 1000px;
+}
+
+.specialties h2 {
+    font-size: 2.5em;
+    color: #ff5f00;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.specialties ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+.specialties li {
+    margin: 15px 0;
+}
+
+.specialties li strong {
+    color: #ff5f00;
+}
+
+/* YouTube Channel Button */
+.channel-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: #ff0000;
+    color: #fff;
+    font-size: 1.5em;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.channel-btn:hover {
+    background-color: #00eaff;
+}
+
+/* Footer */
+.footer {
+    margin-top: 50px;
+    font-size: 1.1em;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.footer a {
+    color: #ff5f00;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Subscriber Count Section */
+.subcount {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    max-width: 600px;
+    height: 255px;
+    margin: 40px auto;
+    overflow: auto;
+}
+
+.subcount h1 {
+    color: #ff5f00;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.subcount-container p {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.subscriber-count {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 20px;
+    position: relative;
+    min-height: 50px;
+}
+
+/* Loading Spinner */
+.loader {
+    border: 5px solid #f3f3f3;
+    border-top: 6px solid #ff5f00;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Lightbox Modal Styles */
+.lightbox-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    border-radius: 10px;
+}
+
+.lightbox-caption {
+    text-align: center;
+    color: #fff;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+/* Style for the Back to Top Button */
+.back-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff0000;
+    color: white;
+    border: solid 2px black;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.back-to-top-btn:hover {
+    background-color: #005bb5;
+    transform: scale(1.1);
+}
+
+.back-to-top-btn:focus {
+    outline: none;
+}

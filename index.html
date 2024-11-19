@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formula Flicks - F1 Video Gallery</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+    <link rel = "icon" type = "image/jpg" href = "D:\Personal\Edits\logos\Channel Logo.jpg">
+</head>
+<body>
+
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" class="back-to-top-btn">↑</button>
+
+    <!-- Specialties Section -->
+    <div class="specialties">
+        <h2>Why Formula Flicks?</h2>
+        <ul>
+            <li><strong>High-Energy Edits:</strong> Experience the thrill of Formula 1 like never before with fast-paced, high-energy video edits that capture the speed, drama, and excitement of each race.</li>
+            <li><strong>Unique Cinematic Touch:</strong> From stunning slow-motion replays to dramatic montages, my edits focus on capturing the most exciting moments from F1 racing in a cinematic style.</li>
+            <li><strong>In-Depth Race Highlights:</strong> I provide carefully curated race highlights, focusing on the key moments, thrilling overtakes, pit stops, and accidents that make every Grand Prix unforgettable.</li>
+            <li><strong>Formula 1 Passion:</strong> With a deep love for Formula 1, I aim to bring the most exciting, impactful, and emotional moments from each race to life for every fan.</li>
+            <li><strong>Interactive Community:</strong> Formula Flicks isn't just a channel—it's a community of F1 fans. I actively engage with viewers, listen to feedback, and strive to improve the content with every upload.</li>
+        </ul>
+    </div>
+
+    <!-- Subscriber Count Live -->
+    <div class="subcount">
+        <h1>Live YouTube Subscriber Count</h1><br>
+        <div class="subcount-container">
+            <div id="subscriberCount" class="subscriber-count">
+                <div class="loader"></div> <!-- Loading Spinner -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Button to Your YouTube Channel -->
+    <a href="https://www.youtube.com/channel/UCLFYxJfXy13QKHie2fqn1Mg" class="channel-btn" target="_blank">Check Out My YouTube Channel</a><br><br><br>
+
+    <!-- Main Header -->
+    <h1>Formula Flicks Video Gallery</h1>
+    <p>Explore our collection of Formula 1 highlights and exciting YouTube Shorts! Check out our latest edits and thrilling moments from the world of F1.</p>
+
+    <!-- Video Gallery Section -->
+    <div class="video-gallery">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/FhHJiWWnX0I" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="video-container short">
+            <iframe src="https://www.youtube.com/embed/-zLNHY7FoGc" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="video-container short">
+            <iframe src="https://www.youtube.com/embed/AeOZyAhJj-s" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div><br><br><br><br>
+
+    <!-- Thumbnail Gallery Section -->
+    <h2 style="color: #fff; font-size: 2em; text-align: center; margin-bottom: 30px;">Check out the thumbnail designs</h2>
+    <div class="thumbnail-gallery">
+        <div class="thumbnail-container">
+            <a href="javascript:void(0)" onclick="openLightbox('D:/Personal/Thumnail Designs/Carlos Sainz Mexico Win.png')">
+                <img src="D:/Personal/Thumnail Designs/Carlos Sainz Mexico Win.png" alt="Formula 1 Video 1">
+            </a>
+        </div>
+
+        <div class="thumbnail-container">
+            <a href="javascript:void(0)" onclick="openLightbox('D:/Personal/Thumnail Designs/Mercedes Downfall.png')">
+                <img src="D:/Personal/Thumnail Designs/Mercedes Downfall.png" alt="Formula 1 Short Video 1">
+            </a>
+        </div>
+
+        <div class="thumbnail-container">
+            <a href="javascript:void(0)" onclick="openLightbox('D:/Personal/Thumnail Designs/SkyFall Thumbnail.png')">
+                <img src="D:/Personal/Thumnail Designs/SkyFall Thumbnail.png" alt="Formula 1 Video 2">
+            </a>
+        </div>
+
+        <div class="thumbnail-container">
+            <a href="javascript:void(0)" onclick="openLightbox('D:/Personal/Thumnail Designs/Formula 1.png')">
+                <img src="D:/Personal/Thumnail Designs/Formula 1.png" alt="Formula 1 Short Video 2">
+            </a>
+        </div>
+
+        <div class="thumbnail-container">
+            <a href="javascript:void(0)" onclick="openLightbox('D:/Personal/Thumnail Designs/Max.png')">
+                <img src="D:/Personal/Thumnail Designs/Max.png" alt="Formula 1 Short Video 2">
+            </a>
+        </div>
+
+        <div class="thumbnail-container">
+            <a href="javascript:void(0)" onclick="openLightbox('D:/Personal/Thumnail Designs/Abu Dhabhi.png')">
+                <img src="D:/Personal/Thumnail Designs/Abu Dhabhi.png" alt="Formula 1 Short Video 2">
+            </a>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightboxModal" class="lightbox-modal">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightboxImage">
+        <div id="lightboxCaption" class="lightbox-caption"></div>
+    </div>
+
+    <div class="footer">
+        <center><p>&copy; 2024 Formula Flicks | Created and Managed by <a href="https://www.youtube.com/channel/UCLFYxJfXy13QKHie2fqn1Mg" target="_blank">Formula Flicks</a></p></center>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to the external JS file -->
+
+</body>
+</html>
